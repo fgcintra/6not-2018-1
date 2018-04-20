@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -12,6 +13,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http'
 import { ProdutoService } from './../services/produto';
 
+const cloudSettings: CloudSettings = {
+  'core': {
+    'app_id': '4c89312a'
+  }
+};
+
 @NgModule({
   declarations: [
     MyApp,
@@ -22,6 +29,7 @@ import { ProdutoService } from './../services/produto';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
+    CloudModule.forRoot(cloudSettings)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -4,6 +4,7 @@
   <ion-card *ngFor="let p of produtos">
     <ion-card-header>{{p.descricao}}</ion-card-header>
     <ion-card-content>
+      <img [src]="p.imagem" [alt]="p.descricao" />
       <p>Preço: {{p.preco | currency}}</p>
       <p>Quantidade: {{p.quantidade}}</p>
       <p>Cód.: {{p.codigo}}</p>
