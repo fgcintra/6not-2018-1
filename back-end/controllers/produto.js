@@ -4,7 +4,7 @@ var produtos = [
       descricao: 'Notebook Intel Core i7 8GB',
       preco: 2799,
       quantidade: 3,
-      imagem: 'http://localhost:3000/public/images/notebook1.jpg',
+      imagem: 'http://localhost:3000/images/notebook1.jpg',
       especificacao: 'Lorem ipsum sic dolor amet'
    },
    {
@@ -12,7 +12,7 @@ var produtos = [
       descricao: 'Notebook Intel Core i5 6GB',
       preco: 2399,
       quantidade: 2,
-      imagem: 'http://localhost:3000/public/images/notebook2.jpg',
+      imagem: 'http://localhost:3000/images/notebook2.jpg',
       especificacao: 'Lorem ipsum sic dolor amet'
    },
    {
@@ -20,7 +20,7 @@ var produtos = [
       descricao: 'Smartphone LG K10',
       preco: 579,
       quantidade: 4,
-      imagem: 'http://localhost:3000/public/images/smartphone1.jpg',
+      imagem: 'http://localhost:3000/images/smartphone1.jpg',
       especificacao: 'Lorem ipsum sic dolor amet'
    },
    {
@@ -28,7 +28,7 @@ var produtos = [
       descricao: 'Smartphone Samsung J7',
       preco: 679,
       quantidade: 6,
-      imagem: 'http://localhost:3000/public/images/smartphone2.jpg',
+      imagem: 'http://localhost:3000/images/smartphone2.jpg',
       especificacao: 'Lorem ipsum sic dolor amet'
    }
 ]
