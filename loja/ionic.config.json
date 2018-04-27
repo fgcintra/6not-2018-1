@@ -1,6 +1,6 @@
 {
   "name": "loja",
-  "app_id": "",
+  "app_id": "4c89312a",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+
+// Necessário para o Auth0
+import { IonicStorageModule } from '@ionic/storage';
+import { AuthService} from '../services/auth.service';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -14,11 +17,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http'
 import { ProdutoService } from './../services/produto';
 
-const cloudSettings: CloudSettings = {
-  'core': {
-    'app_id': '4c89312a'
-  }
-};
 
 @NgModule({
   declarations: [
@@ -31,7 +29,7 @@ const cloudSettings: CloudSettings = {
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    CloudModule.forRoot(cloudSettings)
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -44,7 +42,8 @@ const cloudSettings: CloudSettings = {
     StatusBar,
     SplashScreen,
     ProdutoService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthService
   ]
 })
 export class AppModule {}

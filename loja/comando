@@ -1,1 +1,3 @@
-npm i @ionic/cloud-angular --no-bin-links --save
+# npm uninstall @ionic/cloud-angular --save
+
+npm i @auth0/cordova --save
