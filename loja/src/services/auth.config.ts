@@ -1,5 +1,7 @@
 // Change this filename to auth.config.ts
 
+
+
 export const AUTH_CONFIG = {
   // Needed for Auth0 (capitalization: ID):
   clientID: 'NBYBcD1zaOZFEFIXDoKXLahtB2xiQdU7',
