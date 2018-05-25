@@ -17,13 +17,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http'
 import { ProdutoService } from './../services/produto';
 
+import { ContactPage } from '../pages/contact/contact';
+import { ContactFormService } from './../services/contact-form.service';
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    LoginPage
+    LoginPage,
+    ContactPage
   ],
   imports: [
     BrowserModule,
@@ -36,12 +40,14 @@ import { ProdutoService } from './../services/produto';
     MyApp,
     HomePage,
     ListPage,
-    LoginPage
+    LoginPage,
+    ContactPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     ProdutoService,
+    ContactFormService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthService
   ]
