@@ -20,6 +20,8 @@ import { ProdutoService } from './../services/produto';
 import { ContactPage } from '../pages/contact/contact';
 import { ContactFormService } from './../services/contact-form.service';
 
+import { ThankyouPage } from '../pages/thankyou/thankyou';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ContactFormService } from './../services/contact-form.service';
     HomePage,
     ListPage,
     LoginPage,
-    ContactPage
+    ContactPage,
+    ThankyouPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { ContactFormService } from './../services/contact-form.service';
     HomePage,
     ListPage,
     LoginPage,
-    ContactPage
+    ContactPage,
+    ThankyouPage
   ],
   providers: [
     StatusBar,

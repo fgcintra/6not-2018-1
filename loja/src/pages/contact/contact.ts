@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ContactFormService } from '../../services/contact-form.service';
+import { ThankyouPage } from '../thankyou/thankyou';
 
 @Component ({
    selector: 'page-contact',
@@ -9,7 +10,7 @@ import { ContactFormService } from '../../services/contact-form.service';
 export class ContactPage {
 
    public data: any;
-   public isSubmitted: Boolean = false;
+   public isSubmitted: boolean = false;
 
    constructor(public nav: NavController, private formData: ContactFormService) {
       this.nav = nav;
@@ -35,7 +36,7 @@ export class ContactPage {
          this.formData.phone = this.data.phone;
          this.formData.email = this.data.email;
          this.formData.comment = this.data.comment;
-         // this.nav.push(ThankyouPage);
+         this.nav.push(ThankyouPage);
       }
 
    }
